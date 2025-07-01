@@ -1,0 +1,13 @@
+name: "McGonigle Chronicles"
+description: "My own custom theme for WinterCMS."
+author: "Patrick McGonigle"
+homepage: "https://mcgonigle.dev"
+version: "1.0.0"
+code: "chronicles"
+form:
+    fields:
+        googleanalytics_id:
+            label: themes.mcgonigle::lang.options.googleanalytics_id
+            type: text
+            span: full
+
