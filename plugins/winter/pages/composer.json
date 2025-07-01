@@ -1,0 +1,45 @@
+{
+    "name": "winter/wn-pages-plugin",
+    "type": "winter-plugin",
+    "description": "Pages plugin for Winter CMS",
+    "homepage": "https://github.com/wintercms/wn-pages-plugin",
+    "keywords": ["winter cms", "winter", "plugin", "static", "cms", "pages"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Alexey Bobkov",
+            "email": "aleksey.bobkov@gmail.com",
+            "role": "Original Author"
+        },
+        {
+            "name": "Samuel Georges",
+            "email": "daftspunky@gmail.com",
+            "role": "Original Author"
+        },
+        {
+            "name": "Winter CMS Maintainers",
+            "homepage": "https://wintercms.com",
+            "role": "Maintainer"
+        }
+    ],
+    "support": {
+        "issues": "https://github.com/wintercms/wn-pages-plugin/issues",
+        "discord": "https://discord.gg/D5MFSPH6Ux",
+        "source": "https://github.com/wintercms/wn-pages-plugin"
+    },
+    "require": {
+        "composer/installers": "~1.0",
+        "winter/wn-backend-module": ">=1.2.7"
+    },
+    "replace": {
+        "rainlab/pages-plugin": "~1.3"
+    },
+    "extra": {
+        "installer-name": "pages",
+        "winter": {
+            "name": "Pages",
+            "icon": "https://raw.githubusercontent.com/wintercms/wn-pages-plugin/main/.github/icon.png",
+            "categories": ["Content", "Navigation"]
+        }
+    }
+}

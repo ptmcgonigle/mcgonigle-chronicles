@@ -1,0 +1,57 @@
+<ul class="handlers">
+    {% for handler, handlerData in results %}
+    <li>
+        <a
+            href="#"
+            {% if handler == selectedHandler %} class="active" {% endif %}
+            data-request="{{ __SELF__ ~ '::onSearch' }}"
+            data-request-data="handler: '{{ handler }}', query: '{{ query }}'"
+        >
+            {{ handlerData.name }} ({{ handlerData.total }})
+        </a>
+    </li>
+    {% endfor %}
+</ul>
+
+<ul class="results">
+    {% if __SELF__.isGrouped %}
+        {% for group, results in results[selectedHandler].results %}
+        <li>
+            <strong>{{ group }}</strong>
+            <ul>
+                {% for result in results %}
+                <li>
+                    {% if result.label %}
+                        <span class="label">{{ result.label }}</span><br>
+                    {% endif %}
+
+                    <a href="{{ result.url }}">
+                        {{ result.title }}
+                    </a><br>
+
+                    {% if __SELF__.showExcerpts %}
+                        <small>{{ result.description }}</small>
+                    {% endif %}
+                </li>
+                {% endfor %}
+            </ul>
+        </li>
+        {% endfor %}
+    {% else %}
+        {% for result in results[selectedHandler].results %}
+        <li>
+            {% if result.label %}
+                <span class="label">{{ result.label }}</span><br>
+            {% endif %}
+
+            <a href="{{ result.url }}">
+                {{ result.title }}
+            </a><br>
+
+            {% if __SELF__.showExcerpts %}
+                <small>{{ result.description }}</small>
+            {% endif %}
+        </li>
+        {% endfor %}
+    {% endif %}
+</ul>

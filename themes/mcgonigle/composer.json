@@ -1,0 +1,30 @@
+{
+    "name": "ptmcgonigle/wn-mcgonigle-theme",
+    "description": "Winter starter theme upgraded with Tailwind v4 and Vite hot reloading",
+    "type": "winter-theme",
+    "homepage": "https://github.com/ptmcgonigle/wn-mcgonigle-theme",
+    "repository": "https://github.com/ptmcgonigle/wn-workshop-theme",
+    "keywords": ["winter cms", "winter", "theme", "tailwind", "vite"],
+    "version": "1.0.0",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "The Website Guy",
+            "homepage": "https://github.com/thewebsiteguy",
+            "email": "patrick@mcgonigle.dev",
+            "role": "Developer"
+        }
+    ],
+    "support": {
+        "issues": "https://github.com/ptmcgonigle/wn-mcgonigle-theme/issues",
+        "source": "https://github.com/ptmcgonigle/wn-mcgonigle-theme"
+    },
+    "require": {
+        "composer/installers": "~1.0",
+        "winter/wn-blog-plugin": "^2.1",
+        "winter/wn-pages-plugin": "^2.2"
+    },
+    "extra": {
+        "installer-name": "mcgonigle"
+    }
+}
