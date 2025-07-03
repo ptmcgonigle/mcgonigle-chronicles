@@ -1,0 +1,13 @@
+{
+  "assets/src/css/theme-chronicles.css": {
+    "file": "theme-chronicles-B32pOW-c.css",
+    "src": "assets/src/css/theme-chronicles.css",
+    "isEntry": true
+  },
+  "assets/src/js/theme-chronicles.js": {
+    "file": "theme-chronicles-l0sNRNKZ.js",
+    "name": "theme-chronicles",
+    "src": "assets/src/js/theme-chronicles.js",
+    "isEntry": true
+  }
+}
