@@ -1,0 +1,29 @@
+title = "Get in touch"
+url = "/contact"
+layout = "default"
+is_hidden = 0
+meta_nofollow = 0
+
+[genericForm contactForm]
+messages_success = "Your form was successfully submitted"
+messages_errors = "There were errors with your submission"
+mail_enabled = 1
+mail_subject = "MCG Online Enquiry"
+mail_recipients[] = "patrick@mcgonigle.studio"
+reset_form = 1
+redirect = "/sent"
+inline_errors = "display"
+sanitize_data = "disabled"
+anonymize_ip = "disabled"
+recaptcha_enabled = 1
+recaptcha_theme = "light"
+recaptcha_type = "image"
+recaptcha_size = "invisible"
+emails_date_format = "Y-m-d"
+==
+<header class="text-center my-10">
+    <h1 class="text-4xl md:text-7xl font-bold">Message me</h1>
+</header>
+<div class="container mx-auto flex justify-center max-w-screen-md px-3">
+    {% component 'contactForm' %}
+</div>

@@ -1,0 +1,19 @@
+list: $/josephcrowell/magicforms/models/record/columns.yaml
+modelClass: JosephCrowell\MagicForms\Models\Record
+title: josephcrowell.magicforms::lang.controllers.records.title
+recordUrl: josephcrowell/magicforms/records/view/:id
+noRecordsMessage: backend::lang.list.no_records
+recordsPerPage: 20
+showSetup: true
+showSorting: true
+showCheckboxes: true
+filter: config_filter.yaml
+
+defaultSort:
+  column: created_at
+  direction: desc
+
+toolbar:
+  buttons: partials/list_toolbar
+  search:
+    prompt: backend::lang.list.search_prompt

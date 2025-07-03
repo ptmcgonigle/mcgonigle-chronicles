@@ -1,0 +1,30 @@
+columns:
+  id:
+    label: josephcrowell.magicforms::lang.controllers.records.columns.id
+    searchable: true
+
+  group:
+    label: josephcrowell.magicforms::lang.controllers.records.columns.group
+    searchable: true
+
+  ip:
+    label: josephcrowell.magicforms::lang.controllers.records.columns.ip
+    searchable: true
+
+  form_data:
+    label: josephcrowell.magicforms::lang.controllers.records.columns.form_data
+    type: partial
+    path: $/josephcrowell/magicforms/models/record/fields/_stored_fields.htm
+    searchable: true
+
+  files:
+    label: josephcrowell.magicforms::lang.controllers.records.columns.files
+    type: partial
+    path: $/josephcrowell/magicforms/models/record/fields/_files_fields.htm
+    searchable: false
+    sortable: false
+    #invisible : true
+
+  created_at:
+    label: josephcrowell.magicforms::lang.controllers.records.columns.created_at
+    type: datetime

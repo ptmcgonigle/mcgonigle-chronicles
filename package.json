@@ -6,6 +6,8 @@
     },
     "workspaces": {
         "packages": [
+            "plugins/winter/tailwindui",
+            "themes/chronicles",
             "themes/mcgonigle",
             "themes/startup"
         ]

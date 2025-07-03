@@ -1,0 +1,2 @@
+form: $/josephcrowell/magicforms/models/export/fields.yaml
+modelClass: JosephCrowell\MagicForms\Models\Record

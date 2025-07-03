@@ -1,0 +1,40 @@
+{
+    "name": "winter/wn-sitemap-plugin",
+    "type": "winter-plugin",
+    "description": "Sitemap plugin for Winter CMS",
+    "homepage": "https://github.com/wintercms/wn-sitemap-plugin",
+    "keywords": ["winter cms", "winter", "plugin", "cms", "sitemap"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Alexey Bobkov",
+            "email": "aleksey.bobkov@gmail.com",
+            "role": "Original Author"
+        },
+        {
+            "name": "Samuel Georges",
+            "email": "daftspunky@gmail.com",
+            "role": "Original Author"
+        },
+        {
+            "name": "Winter CMS Maintainers",
+            "homepage": "https://wintercms.com",
+            "role": "Maintainer"
+        }
+    ],
+    "support": {
+        "issues": "https://github.com/wintercms/wn-sitemap-plugin/issues",
+        "discord": "https://discord.gg/D5MFSPH6Ux",
+        "source": "https://github.com/wintercms/wn-sitemap-plugin"
+    },
+    "require": {
+        "php": ">=7.2",
+        "composer/installers": "~1.0"
+    },
+    "replace": {
+        "rainlab/sitemap-plugin": "~1.0"
+    },
+    "extra": {
+        "installer-name": "sitemap"
+    }
+}

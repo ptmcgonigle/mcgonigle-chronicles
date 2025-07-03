@@ -1,0 +1,14 @@
+        <!-- Scripts -->
+        {% snowboard all %}
+        {# Vite extracted assets #}
+        {{ vite(['assets/src/js/theme-chronicles.js'], 'theme-chronicles') }}
+
+        {% scripts %}
+
+        {% flash %}
+            <p data-control="flash-message" data-interval="7" class="flashmessage {{ type }}">
+                {{ message }}
+            </p>
+        {% endflash %}
+    </body>
+</html>

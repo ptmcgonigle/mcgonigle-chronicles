@@ -1,0 +1,45 @@
+{{ form_ajax(__SELF__ ~ '::onFormSubmit', { id: __SELF__, class: 'w-full' }) }}
+
+    <div id="{{ __SELF__ }}_forms_flash"></div>
+
+    
+    <fieldset class="fieldset">
+      <legend class="fieldset-legend">What is your name?</legend>
+      <input id="name" name="name" type="text" class="input md:input-xl w-full" placeholder="What should I call you?" />
+    </fieldset>
+
+    <fieldset class="fieldset">
+      <legend class="fieldset-legend">Email</legend>
+      <input id="email" email="name" type="text" class="input md:input-xl w-full" placeholder="What is your contact email?" />
+    </fieldset>
+
+
+    <fieldset class="fieldset">
+      <legend class="fieldset-legend">Subject</legend>
+      <select class="select w-full md:select-xl" id="subject" name="subject">
+        <option disabled selected>What would you like to talk about?</option>
+        <option>Web Design & Development</option>
+        <option>Web Hosting & Servers</option>
+        <option>Tech Support</option>
+        <option>Contract Work</option>
+        <option>Other</option>
+      </select>
+    </fieldset>
+
+    <fieldset class="fieldset">
+      <legend class="fieldset-legend">Comments</legend>
+      <textarea class="textarea md:textarea-xl h-24 md:h-40 w-full" placeholder="Enter your message here" id="comments" name="comments"></textarea>
+    </fieldset>
+
+
+
+
+    <div>
+        {% partial '@recaptcha' %}
+    </div>
+
+    <button class="btn btn-primary btn-sm md:btn-xl w-full mt-3 " type="submit" id="{{ __SELF__ }}_submit">
+        Send Message
+    </button>
+
+{{ form_close() }}

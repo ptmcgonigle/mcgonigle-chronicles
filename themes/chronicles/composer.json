@@ -1,5 +1,5 @@
 {
-    "name": "ptmcgonigle/wn-mcgonigle-theme",
+    "name": "ptmcgonigle/wn-chronicles-theme",
     "description": "Winter starter theme upgraded with Tailwind v4 and Vite hot reloading",
     "type": "winter-theme",
     "homepage": "https://github.com/ptmcgonigle/wn-mcgonigle-theme",
@@ -9,22 +9,25 @@
     "license": "MIT",
     "authors": [
         {
-            "name": "The Website Guy",
-            "homepage": "https://github.com/thewebsiteguy",
+            "name": "Patrick McGonigle",
+            "homepage": "https://github.com/ptmcgonigle",
             "email": "patrick@mcgonigle.dev",
             "role": "Developer"
         }
     ],
     "support": {
-        "issues": "https://github.com/ptmcgonigle/wn-mcgonigle-theme/issues",
-        "source": "https://github.com/ptmcgonigle/wn-mcgonigle-theme"
+        "issues": "https://github.com/ptmcgonigle/wn-chronicles-theme/issues",
+        "source": "https://github.com/ptmcgonigle/wn-chronicles-theme"
     },
     "require": {
         "composer/installers": "~1.0",
         "winter/wn-blog-plugin": "^2.1",
-        "winter/wn-pages-plugin": "^2.2"
+        "winter/wn-search-plugin": "^1.0",
+        "winter/wn-seo-plugin": "^1.0",
+        "winter/wn-sitemap-plugin": "^2.1",
+        "josephcrowell/wn-magicforms-plugin": "^3.0"
     },
     "extra": {
-        "installer-name": "mcgonigle"
+        "installer-name": "chronicles"
     }
 }
