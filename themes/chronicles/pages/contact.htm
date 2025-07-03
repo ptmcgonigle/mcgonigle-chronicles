@@ -5,6 +5,9 @@ is_hidden = 0
 meta_nofollow = 0
 
 [genericForm contactForm]
+rules[name] = "required"
+rules[email] = "required|email"
+rules[comments] = "required"
 messages_success = "Your form was successfully submitted"
 messages_errors = "There were errors with your submission"
 mail_enabled = 1
